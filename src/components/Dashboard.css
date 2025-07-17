@@ -1,0 +1,62 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.dashboard h1 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+  text-shadow: 1px 1px 0 #e0e7ff;
+}
+
+.dashboard-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 40px 60px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-links:hover {
+  transform: translateY(-4px);
+}
+
+.dashboard-links a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  padding: 14px 28px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.dashboard-links a:hover {
+  background: linear-gradient(to right, #2563eb, #0ea5e9);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
